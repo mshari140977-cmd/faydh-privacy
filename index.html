@@ -1,69 +1,278 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سياسة الخصوصية — فائض</title>
-<style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px 30px; color: #222; background: #fff; }
-  h1 { color: #C9A24A; font-size: 28px; border-bottom: 2px solid #C9A24A; padding-bottom: 10px; }
-  h2 { color: #1C2B1A; font-size: 18px; margin-top: 30px; }
-  p, li { font-size: 15px; line-height: 1.8; color: #444; }
-  ul { padding-right: 20px; }
-  .date { color: #888; font-size: 13px; margin-bottom: 30px; }
-  .contact { background: #f9f5ec; border-right: 4px solid #C9A24A; padding: 15px 20px; border-radius: 8px; margin-top: 30px; }
-</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="سياسة الخصوصية لتطبيق فائض — سوق مواد البناء الفائضة"/>
+  <title>سياسة الخصوصية — فائض</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI',Tahoma,Arial,sans-serif; background:#F2F2F2; color:#333; line-height:1.8; direction:rtl; }
+    header { background:#1C2B1A; padding:40px 20px; text-align:center; }
+    header .logo { font-size:48px; font-weight:900; color:#C9A24A; letter-spacing:2px; }
+    header .subtitle { color:rgba(255,255,255,0.6); font-size:14px; margin-top:6px; }
+    header .badge { display:inline-block; background:rgba(201,162,74,0.2); border:1px solid rgba(201,162,74,0.4); color:#C9A24A; font-size:13px; padding:6px 18px; border-radius:20px; margin-top:14px; }
+    .container { max-width:860px; margin:0 auto; padding:30px 20px 60px; }
+    .update-bar { background:#fff; border-right:4px solid #C9A24A; border-radius:10px; padding:14px 18px; margin-bottom:28px; font-size:13px; color:#666; }
+    .update-bar strong { color:#1C2B1A; }
+    .toc { background:#fff; border-radius:14px; padding:20px 24px; margin-bottom:32px; border:1px solid #EBEBEB; }
+    .toc h3 { color:#1C2B1A; font-size:15px; margin-bottom:12px; border-bottom:1px solid #EBEBEB; padding-bottom:8px; }
+    .toc ol { padding-right:20px; }
+    .toc li { margin-bottom:6px; }
+    .toc a { color:#C9A24A; text-decoration:none; font-size:14px; }
+    .toc a:hover { text-decoration:underline; }
+    section { background:#fff; border-radius:14px; padding:28px; margin-bottom:20px; border:1px solid #EBEBEB; }
+    section h2 { font-size:20px; color:#1C2B1A; margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid #C9A24A; display:flex; align-items:center; gap:10px; }
+    section h2 .num { background:#1C2B1A; color:#C9A24A; width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; flex-shrink:0; }
+    section h3 { font-size:16px; color:#1C2B1A; margin:20px 0 10px; }
+    p { font-size:14px; color:#555; margin-bottom:12px; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; font-size:14px; }
+    th { background:#1C2B1A; color:#C9A24A; padding:12px 14px; text-align:right; font-weight:700; }
+    td { padding:11px 14px; border-bottom:1px solid #F0F0F0; color:#444; vertical-align:top; }
+    tr:nth-child(even) td { background:#FAFAFA; }
+    .highlight { background:#F5F0E4; border-right:4px solid #C9A24A; border-radius:8px; padding:14px 18px; margin:14px 0; font-size:14px; color:#444; }
+    .warning { background:#FFF8F0; border-right:4px solid #E67E22; border-radius:8px; padding:14px 18px; margin:14px 0; font-size:14px; color:#555; }
+    .success { background:#F0FFF4; border-right:4px solid #27AE60; border-radius:8px; padding:14px 18px; margin:14px 0; font-size:14px; color:#444; }
+    ul, ol { padding-right:22px; margin:10px 0; }
+    li { font-size:14px; color:#555; margin-bottom:8px; line-height:1.7; }
+    .badge-green { background:#E8F5E9; color:#27AE60; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:700; }
+    .badge-red   { background:#FFEBEE; color:#E74C3C; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:700; }
+    .badge-gold  { background:#F5F0E4; color:#C9A24A; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:700; }
+    .contact-box { background:#1C2B1A; border-radius:14px; padding:28px; text-align:center; margin-top:30px; }
+    .contact-box h3 { color:#C9A24A; font-size:18px; margin-bottom:10px; }
+    .contact-box p  { color:rgba(255,255,255,0.6); font-size:13px; margin-bottom:16px; }
+    .contact-box a  { color:#C9A24A; text-decoration:none; font-weight:700; font-size:15px; }
+    footer { text-align:center; padding:24px; color:#999; font-size:12px; border-top:1px solid #EBEBEB; margin-top:20px; }
+    .nav-links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; }
+    .nav-link { background:#fff; border:1px solid #EBEBEB; border-radius:10px; padding:10px 20px; font-size:13px; color:#1C2B1A; text-decoration:none; font-weight:600; }
+    .nav-link:hover { border-color:#C9A24A; color:#C9A24A; }
+    .nav-link.active { background:#1C2B1A; color:#C9A24A; border-color:#1C2B1A; }
+    @media(max-width:600px){ section{padding:20px 16px;} header .logo{font-size:36px;} table{font-size:13px;} th,td{padding:9px 10px;} }
+  </style>
 </head>
 <body>
 
-<h1>سياسة الخصوصية — تطبيق فائض</h1>
-<p class="date">آخر تحديث: مايو 2026</p>
+<header>
+  <div class="logo">فائض</div>
+  <div class="subtitle">سوق مواد البناء الفائضة</div>
+  <div class="badge">سياسة الخصوصية — Privacy Policy</div>
+</header>
 
-<p>يلتزم تطبيق <strong>فائض</strong> بحماية خصوصية مستخدميه. توضح هذه السياسة كيفية جمع بياناتك واستخدامها وحمايتها.</p>
+<div class="container">
 
-<h2>١. البيانات التي نجمعها</h2>
-<ul>
-  <li>رقم الهاتف المحمول للتحقق من الهوية</li>
-  <li>الاسم والمعلومات الشخصية التي تضيفها طوعاً</li>
-  <li>الموقع الجغرافي (فقط عند تفعيل ميزة "قريب مني")</li>
-  <li>صور الإعلانات التي ترفعها</li>
-  <li>بيانات الاستخدام والتفاعل داخل التطبيق</li>
-</ul>
+  <div class="update-bar">
+    <strong>آخر تحديث:</strong> يونيو ٢٠٢٦ &nbsp;|&nbsp;
+    <strong>تاريخ السريان:</strong> يونيو ٢٠٢٦ &nbsp;|&nbsp;
+    <strong>الإصدار:</strong> 2.1
+  </div>
 
-<h2>٢. كيف نستخدم بياناتك</h2>
-<ul>
-  <li>التحقق من هويتك عبر رمز OTP على واتساب</li>
-  <li>عرض إعلاناتك للمستخدمين الآخرين</li>
-  <li>تحسين تجربة الاستخدام وتخصيص المحتوى</li>
-  <li>إرسال الإشعارات المتعلقة بنشاطك في التطبيق</li>
-</ul>
+  <!-- روابط التنقل -->
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">سياسة الخصوصية</a>
+    <a href="delete-account.html" class="nav-link">حذف الحساب</a>
+    <a href="terms.html" class="nav-link">شروط الاستخدام</a>
+  </div>
 
-<h2>٣. مشاركة البيانات</h2>
-<p>لا نبيع بياناتك لأي طرف ثالث. نشارك بيانات محدودة فقط مع:</p>
-<ul>
-  <li>Supabase لتخزين البيانات بأمان</li>
-  <li>WhatsApp Business API لإرسال رموز التحقق</li>
-</ul>
+  <!-- فهرس -->
+  <div class="toc">
+    <h3>📋 فهرس المحتويات</h3>
+    <ol>
+      <li><a href="#s1">مقدمة وقبول السياسة</a></li>
+      <li><a href="#s2">البيانات التي نجمعها</a></li>
+      <li><a href="#s3">لماذا نجمع هذه البيانات</a></li>
+      <li><a href="#s4">مع من نشارك البيانات</a></li>
+      <li><a href="#s5">الصلاحيات المطلوبة من الجهاز</a></li>
+      <li><a href="#s6">مدة الاحتفاظ بالبيانات</a></li>
+      <li><a href="#s7">أمان البيانات وحمايتها</a></li>
+      <li><a href="#s8">حقوقك كمستخدم</a></li>
+      <li><a href="#s9">الفئة العمرية المستهدفة</a></li>
+      <li><a href="#s10">ملفات تعريف الارتباط والتتبع</a></li>
+      <li><a href="#s11">التغييرات على هذه السياسة</a></li>
+      <li><a href="#s12">التواصل معنا</a></li>
+    </ol>
+  </div>
 
-<h2>٤. أمان البيانات</h2>
-<p>نستخدم تشفير SSL/TLS لجميع الاتصالات، ونطبق سياسات أمان صارمة على قاعدة البيانات لحماية معلوماتك.</p>
+  <!-- ١ -->
+  <section id="s1">
+    <h2><span class="num">١</span> مقدمة وقبول السياسة</h2>
+    <p>مرحباً بك في تطبيق <strong>فائض</strong>، منصة بيع وشراء مواد البناء الفائضة في المملكة العربية السعودية. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية وفقاً لنظام حماية البيانات الشخصية السعودي (PDPL) وسياسات Google Play وApple App Store.</p>
+    <p>باستخدامك للتطبيق، فإنك توافق على جمع بياناتك واستخدامها وفق ما هو موضح في هذه السياسة. إذا كنت لا توافق على أي بند، يُرجى التوقف عن استخدام التطبيق.</p>
+    <div class="highlight">
+      <strong>المشغّل:</strong> تطبيق فائض — المملكة العربية السعودية<br/>
+      <strong>البريد الإلكتروني:</strong> support@faydh.app<br/>
+      <strong>الموقع:</strong> https://mshari140977-cmd.github.io/faydh-privacy
+    </div>
+  </section>
 
-<h2>٥. حقوقك</h2>
-<ul>
-  <li>يمكنك تعديل أو حذف بياناتك الشخصية في أي وقت من إعدادات حسابك</li>
-  <li>يمكنك حذف حسابك نهائياً مع جميع بياناتك من داخل التطبيق</li>
-  <li>يمكنك إيقاف تشغيل الموقع الجغرافي من إعدادات جهازك</li>
-</ul>
+  <!-- ٢ -->
+  <section id="s2">
+    <h2><span class="num">٢</span> البيانات التي نجمعها</h2>
+    <h3>أ) بيانات تُقدمها أنت مباشرة</h3>
+    <table>
+      <tr><th>نوع البيانات</th><th>التفاصيل</th><th>إلزامي؟</th></tr>
+      <tr><td><strong>رقم الجوال</strong></td><td>يُستخدم للتحقق من الهوية عبر OTP واتساب — هو معرّف حسابك الوحيد</td><td><span class="badge-red">إلزامي</span></td></tr>
+      <tr><td><strong>الاسم</strong></td><td>يظهر في ملفك الشخصي وإعلاناتك</td><td><span class="badge-red">إلزامي</span></td></tr>
+      <tr><td><strong>المنطقة الجغرافية</strong></td><td>لعرض الإعلانات القريبة منك (تُختار من قائمة)</td><td><span class="badge-red">إلزامي</span></td></tr>
+      <tr><td><strong>نوع الحساب</strong></td><td>فرد / مؤسسة / صاحب شاحنة — لتحديد الصلاحيات</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td><strong>صورة الملف الشخصي</strong></td><td>تُرفع لخوادمنا وتظهر في ملفك العام</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td><strong>صور الإعلانات</strong></td><td>صور مواد البناء التي تنشرها للبيع</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td><strong>نبذة شخصية</strong></td><td>وصف مختصر يظهر في ملفك الشخصي</td><td><span class="badge-gold">اختياري</span></td></tr>
+    </table>
+    <h3>ب) بيانات تُجمع تلقائياً</h3>
+    <table>
+      <tr><th>نوع البيانات</th><th>التفاصيل</th></tr>
+      <tr><td><strong>الموقع الجغرافي</strong></td><td>عند الضغط على "قريب مني" فقط — لا نجمع الموقع في الخلفية أبداً</td></tr>
+      <tr><td><strong>رسائل المحادثة</strong></td><td>الرسائل المُرسلة بين المستخدمين داخل التطبيق</td></tr>
+      <tr><td><strong>عدد مشاهدات الإعلان</strong></td><td>إحصائية لمساعدتك على قياس أداء إعلانك</td></tr>
+      <tr><td><strong>رمز الجهاز (Push Token)</strong></td><td>لإرسال الإشعارات الفورية — لا يُستخدم لأغراض أخرى</td></tr>
+    </table>
+    <div class="success">✅ <strong>لا نجمع أبداً:</strong> جهات الاتصال، سجل المكالمات، رسائل SMS، كلمات المرور، أو بيانات الدفع.</div>
+  </section>
 
-<h2>٦. الاحتفاظ بالبيانات</h2>
-<p>نحتفظ ببياناتك طالما حسابك نشط. عند حذف الحساب، تُحذف جميع بياناتك خلال 30 يوماً.</p>
+  <!-- ٣ -->
+  <section id="s3">
+    <h2><span class="num">٣</span> لماذا نجمع هذه البيانات</h2>
+    <table>
+      <tr><th>البيانات</th><th>الغرض الأساسي</th><th>الأساس القانوني</th></tr>
+      <tr><td>رقم الجوال</td><td>المصادقة وإنشاء الحساب عبر OTP — ضروري لتشغيل الخدمة</td><td>ضرورة تعاقدية</td></tr>
+      <tr><td>الاسم والمنطقة</td><td>إكمال الملف الشخصي وعرضه للمستخدمين الآخرين</td><td>ضرورة تعاقدية</td></tr>
+      <tr><td>الصور</td><td>عرض الإعلانات وتمكين المشترين من رؤية المواد</td><td>تنفيذ الخدمة</td></tr>
+      <tr><td>الموقع الجغرافي</td><td>عرض الإعلانات القريبة عند طلبك ذلك صراحةً</td><td>موافقة صريحة</td></tr>
+      <tr><td>رسائل المحادثة</td><td>تمكين التواصل بين البائع والمشتري</td><td>تنفيذ الخدمة</td></tr>
+      <tr><td>Push Token</td><td>إرسال إشعارات الرسائل والتحديثات المهمة</td><td>موافقة صريحة</td></tr>
+    </table>
+    <div class="highlight">
+      <strong>تبرير جمع رقم الجوال لـ Google Play:</strong><br/>
+      رقم الجوال هو الوسيلة الوحيدة للتحقق من هوية المستخدم في فائض. نستخدمه لإرسال رمز OTP عبر واتساب لضمان أن كل حساب مرتبط بشخص حقيقي، مما يحمي المجتمع من الحسابات الوهمية والاحتيال. لا نستخدم رقم الجوال لأي غرض تسويقي ولا نشاركه مع أي طرف ثالث لأغراض تجارية.
+    </div>
+  </section>
 
-<h2>٧. تواصل معنا</h2>
-<div class="contact">
-  <p>لأي استفسار حول سياسة الخصوصية، تواصل معنا:</p>
-  <p>📧 البريد الإلكتروني: <strong>mshari.140977@gmail.com</strong></p>
-  <p>📱 التطبيق: فائض — سوق مواد البناء</p>
+  <!-- ٤ -->
+  <section id="s4">
+    <h2><span class="num">٤</span> مع من نشارك البيانات</h2>
+    <p>نحن <strong>لا نبيع</strong> بياناتك الشخصية ولا نشاركها لأغراض تجارية. نشارك البيانات فقط في الحالات التالية:</p>
+    <table>
+      <tr><th>الجهة</th><th>ما يُشارَك</th><th>الغرض</th><th>سياسة الخصوصية</th></tr>
+      <tr><td><strong>Supabase</strong></td><td>جميع البيانات المُخزَّنة</td><td>قاعدة البيانات والتخزين السحابي</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td><strong>WhatsApp Business API (Meta)</strong></td><td>رقم الجوال فقط</td><td>إرسال رمز OTP للتحقق من الهوية</td><td><a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">whatsapp.com/legal</a></td></tr>
+      <tr><td><strong>Expo / EAS</strong></td><td>رمز الجهاز (Push Token)</td><td>إرسال الإشعارات الفورية</td><td><a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a></td></tr>
+      <tr><td><strong>المستخدمون الآخرون</strong></td><td>الاسم، المنطقة، الصور، التقييمات</td><td>عرض الملف الشخصي العام</td><td>—</td></tr>
+    </table>
+    <div class="warning">⚠️ <strong>حالات الإفصاح القانوني:</strong> قد نُفصح عن بياناتك إذا طلبت الجهات القضائية أو الحكومية السعودية المختصة ذلك وفق الأنظمة المعمول بها.</div>
+  </section>
+
+  <!-- ٥ -->
+  <section id="s5">
+    <h2><span class="num">٥</span> الصلاحيات المطلوبة من الجهاز</h2>
+    <table>
+      <tr><th>الصلاحية</th><th>سبب الطلب</th><th>إلزامية؟</th></tr>
+      <tr><td>📷 <strong>الكاميرا</strong></td><td>لالتقاط صور مواد البناء مباشرة لإعلاناتك</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td>🖼️ <strong>معرض الصور</strong></td><td>لاختيار صور من جهازك لإضافتها للإعلانات</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td>📍 <strong>الموقع (عند الاستخدام فقط)</strong></td><td>لعرض الإعلانات القريبة منك عند الضغط على "قريب مني" فقط</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td>🔔 <strong>الإشعارات</strong></td><td>لإشعارك بالرسائل الجديدة وتحديثات الإعلانات</td><td><span class="badge-gold">اختياري</span></td></tr>
+      <tr><td>🌐 <strong>الإنترنت</strong></td><td>لتشغيل التطبيق والاتصال بالخوادم</td><td><span class="badge-red">إلزامي</span></td></tr>
+    </table>
+    <div class="success">✅ <strong>لا نطلب أبداً:</strong> جهات الاتصال — رسائل SMS — سجل المكالمات — موقع الخلفية — الميكروفون</div>
+    <p>يمكنك في أي وقت إدارة هذه الصلاحيات من إعدادات جهازك ← التطبيقات ← فائض ← الصلاحيات.</p>
+  </section>
+
+  <!-- ٦ -->
+  <section id="s6">
+    <h2><span class="num">٦</span> مدة الاحتفاظ بالبيانات</h2>
+    <table>
+      <tr><th>البيانات</th><th>مدة الاحتفاظ</th></tr>
+      <tr><td>بيانات الحساب (الاسم، الجوال، المنطقة)</td><td>طوال فترة نشاط الحساب</td></tr>
+      <tr><td>الإعلانات والصور</td><td>طوال فترة نشاط الإعلان</td></tr>
+      <tr><td>رسائل المحادثة</td><td>طوال فترة نشاط الحساب</td></tr>
+      <tr><td>رموز OTP</td><td>تُحذف فور استخدامها أو بعد ٥ دقائق من انتهاء صلاحيتها</td></tr>
+      <tr><td>الإشعارات</td><td>٩٠ يوماً من تاريخ الإنشاء</td></tr>
+      <tr><td>سجلات النظام</td><td>٣٠ يوماً لأغراض الأمان وإصلاح الأعطال</td></tr>
+    </table>
+    <!-- ✅ تحديث ١ — صياغة حذف الحساب -->
+    <div class="highlight">
+      <strong>عند حذف الحساب:</strong> سيتم حذف بياناتك الشخصية وإعلاناتك ورسائلك أو إخفاؤها وفق متطلبات التشغيل والأنظمة المعمول بها في المملكة العربية السعودية. قد تُحتفظ ببعض البيانات للامتثال للالتزامات القانونية أو الفنية ضمن المدة المقررة نظاماً.
+    </div>
+  </section>
+
+  <!-- ٧ -->
+  <section id="s7">
+    <h2><span class="num">٧</span> أمان البيانات وحمايتها</h2>
+    <p>نتخذ إجراءات تقنية وتنظيمية صارمة لحماية بياناتك:</p>
+    <ul>
+      <li><strong>تشفير الجلسات:</strong> بيانات تسجيل الدخول مشفّرة ومخزّنة في Secure Store على جهازك</li>
+      <li><strong>بروتوكول HTTPS:</strong> جميع الاتصالات بين التطبيق والخادم مشفّرة</li>
+      <li><strong>Row Level Security:</strong> كل مستخدم يصل فقط لبياناته الخاصة على مستوى قاعدة البيانات</li>
+      <li><strong>فحص الصور:</strong> يتم فحص الصور المرفوعة أمنياً قبل التخزين</li>
+      <li><strong>OTP محدود الصلاحية:</strong> رموز التحقق صالحة لـ ٥ دقائق فقط وتُحذف بعد الاستخدام</li>
+      <li><strong>بدون كلمة مرور تقليدية:</strong> نعتمد على OTP للتحقق من الهوية</li>
+      <li><strong>المفاتيح السرية:</strong> مخزّنة في متغيرات بيئية آمنة وليس في كود التطبيق</li>
+    </ul>
+    <div class="warning">⚠️ رغم جميع الإجراءات الأمنية، لا يوجد نظام آمن بنسبة ١٠٠٪. في حالة حدوث أي اختراق يؤثر على بياناتك، سنبلّغك فوراً وفق المتطلبات القانونية.</div>
+  </section>
+
+  <!-- ٨ -->
+  <section id="s8">
+    <h2><span class="num">٨</span> حقوقك كمستخدم</h2>
+    <table>
+      <tr><th>الحق</th><th>الوصف</th><th>كيفية الممارسة</th></tr>
+      <tr><td>🔍 <strong>الاطلاع</strong></td><td>معرفة ما نجمعه من بياناتك</td><td>تواصل معنا عبر البريد الإلكتروني</td></tr>
+      <tr><td>✏️ <strong>التصحيح</strong></td><td>تعديل بياناتك</td><td>قسم تعديل الملف الشخصي في التطبيق</td></tr>
+      <tr><td>🗑️ <strong>حذف الحساب</strong></td><td>طلب حذف حسابك وبياناتك</td><td>حسابي ← تعديل الملف ← حذف الحساب، أو <a href="delete-account.html">صفحة حذف الحساب</a></td></tr>
+      <tr><td>🚫 <strong>الاعتراض</strong></td><td>الاعتراض على معالجة بياناتك</td><td>تواصل معنا عبر البريد الإلكتروني</td></tr>
+      <tr><td>📤 <strong>النقل</strong></td><td>الحصول على نسخة من بياناتك</td><td>تواصل معنا عبر البريد الإلكتروني</td></tr>
+      <tr><td>🔕 <strong>الإشعارات</strong></td><td>إيقاف إشعارات التطبيق</td><td>إعدادات الجهاز أو إعدادات التطبيق</td></tr>
+    </table>
+  </section>
+
+  <!-- ٩ — ✅ تحديث ٢ — الفئة العمرية -->
+  <section id="s9">
+    <h2><span class="num">٩</span> الفئة العمرية المستهدفة</h2>
+    <p>
+      تطبيق <strong>فائض</strong> غير موجّه للأطفال دون سن <strong>١٨ عاماً</strong>.
+      التطبيق مخصص لأغراض تجارية تتعلق ببيع وشراء مواد البناء، وهي أنشطة تستلزم الأهلية القانونية.
+    </p>
+    <p>
+      إذا علمنا أن مستخدماً دون ١٨ عاماً قد قدّم بيانات شخصية لنا، سنعمل على معالجة ذلك وفق الأنظمة المعمول بها.
+      إذا كنت ولياً للأمر وتعتقد أن طفلك استخدم التطبيق، تواصل معنا فوراً على support@faydh.app.
+    </p>
+  </section>
+
+  <!-- ١٠ — ✅ تحديث ٣ — التتبع -->
+  <section id="s10">
+    <h2><span class="num">١٠</span> ملفات تعريف الارتباط والتتبع</h2>
+    <p>تطبيق <strong>فائض</strong> لا يستخدم حالياً أدوات التتبع الإعلاني أو التحليلات التسويقية.</p>
+    <p>نستخدم فقط التخزين المحلي الضروري لتشغيل التطبيق:</p>
+    <ul>
+      <li><strong>Secure Store:</strong> لتخزين بيانات الجلسة بشكل مشفّر</li>
+      <li><strong>AsyncStorage:</strong> لحفظ تفضيلات التطبيق محلياً</li>
+    </ul>
+    <div class="success">✅ لا إعلانات مستهدفة — لا تتبع إعلاني — لا تحليلات تسويقية حالياً</div>
+    <p>في حال أضفنا أدوات تحليل أو إعلانات مستقبلاً، سنحدّث هذه السياسة ونبلّغك مسبقاً.</p>
+  </section>
+
+  <!-- ١١ -->
+  <section id="s11">
+    <h2><span class="num">١١</span> التغييرات على هذه السياسة</h2>
+    <p>قد نُحدّث هذه السياسة من وقت لآخر. عند إجراء تغييرات جوهرية، سنُبلّغك عبر إشعار داخل التطبيق وتحديث تاريخ "آخر تحديث". استمرارك في استخدام التطبيق يُعدّ قبولاً للسياسة المحدّثة.</p>
+  </section>
+
+  <!-- ١٢ -->
+  <section id="s12">
+    <h2><span class="num">١٢</span> التواصل معنا</h2>
+    <div class="contact-box">
+      <h3>تواصل مع فريق فائض</h3>
+      <p>نرد على جميع الاستفسارات خلال ٧٢ ساعة</p>
+      <a href="mailto:support@faydh.app">support@faydh.app</a>
+      <br/><br/>
+      <p style="font-size:12px;color:rgba(255,255,255,0.4);">المملكة العربية السعودية — Kingdom of Saudi Arabia</p>
+    </div>
+  </section>
+
 </div>
 
+<footer>
+  <p>© ٢٠٢٦ فائض — جميع الحقوق محفوظة</p>
+  <p style="margin-top:6px;">هذه السياسة محمية ومُرخَّصة لتطبيق فائض حصرياً</p>
+</footer>
 </body>
 </html>
